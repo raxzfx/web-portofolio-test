@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body class="font-poppins">
+
+<!-- header s -->
+ <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+  <div class="container">
+    <div class="flex items-center justify-between relative">
+        <div class="px-4 py-6">
+            <a href="#" class="font-bold text-lg text-red-500  ">Rasyanazra</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute
+          right-4 lg:hidden ">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+
+          <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg 
+          max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full
+          lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+                <li class="group">
+                    <a href="#home" class="text-base text-slate-900 py-2 mx-8 
+                    group-hover:text-red-500 flex">beranda</a>
+                </li>
+                <li class="group">
+                    <a href="#about" class="text-base text-slate-900 py-2 mx-8 
+                    group-hover:text-red-500 flex">tentang saya</a>
+                </li>
+                <li class="group">
+                    <a href="#porto" class="text-base text-slate-900 py-2 mx-8 
+                    group-hover:text-red-500 flex">project</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+  </div>
+ </header>
+<!-- header e -->
+ 
+<!-- hero start -->
+<section id="home" class="pt-36">
+    <div class="container">
+    <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2 ">
+        <h1 class="font-semibold text-red-500 text-base capitalize md:text-xl">halo there, im 
+            <span class="text-slate-800 block font-bold text-2xl lg:text-4xl mb-2">rasya nazraditya</span></h1>
+        <h2 class="mb-5 capitalize font-medium text-slate-500 lg:text-lg ">student</h2>
+        <p class="capitalize font-medium text-slate-500 mb-8 ">website ini dibuat sebagai pembelajaran <span class="font-bold text-slate-900 "><a href="https://tailwindcss.com/">tailwind cSS</a></span></p>
+
+        <a href="#" class="text-base font-semibold text-white bg-red-500 py-2 px-7 rounded-full hover:bg-red-700 transition duration-300 ease-in-out ">hubungi saya</a>
+
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 lg:mt-9 lg:right-0 ">
+                <img src="img/Tak berjudul76_20200720190940-1.png" width="150px" alt="" class="max-w-full mx-auto sm:w-32 md:w-52 lg:w-72 ">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- hero end -->
+
+<!-- about start -->
+<section id="about" class="pt-36 pb-32">
+<div class="container">
+    <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-sm text-red-500">about me</h4>
+            <h2 class="font-semibold text-slate-900 text-2xl capitalize mb-3">rasya nazraditya</h2>
+            <p class="text-slate-700 text-sm max-w-md md:max-w-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. In eius voluptates exercitationem saepe laborum iste? Quaerat labore qui unde vel?</p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-bold uppercase text-sm text-red-500">sosial media</h4>
+            <h2 class="font-bold text-2xl text-slate-900 capitalize mb-3">follow me!</h2>
+            <p class="text-slate-700 text-sm max-w-md mb-5 md:max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque quibusdam, commodi nemo corporis tenetur odit? Tempore rem eos inventore.</p>
+           
+            <!-- icon -->
+            <div class="flex items-center" style="font-size: 20px;">
+            <!-- yt -->
+             <a href="https://www.youtube.com/@rasyaajg" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                <ion-icon name="logo-youtube"></ion-icon>
+             </a>
+             <!-- github -->
+              <a href="https://github.com/raxzfx" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <!-- instagram -->
+               <a href="https://www.instagram.com/rasyandty/" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                <ion-icon name="logo-instagram"></ion-icon>
+               </a>
+               <!-- twitter -->
+                <a href="https://x.com/RaxzFx" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- about end -->
+
+<!-- porto s -->
+<section id="porto" class="pt-20 pb-16 bg-slate-100">
+    <div class="container">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h2 class="font-bold text-red-500 text-3xl mb-4 ">project saya</h2>
+                <p class="font-medium text-md text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dignissimos.</p>
+
+            </div>
+        </div>
+        <div class="w-full px-4 flex flex-wrap justify-center">
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/sneakersku.png" alt="" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl mt-5 mb-3 text-slate-900">sneakersku</h3>
+                <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, impedit hic!</p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/rasflix.png" alt="" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl mt-5 mb-3 text-slate-900">rasflix</h3>
+                <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, impedit hic!</p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/portov1.png" alt="" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl mt-5 mb-3 text-slate-900">porto v.1 </h3>
+                <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, impedit hic!</p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="img/porto/untat.png" alt="" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl mt-5 mb-3 text-slate-900">untat library </h3>
+                <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, impedit hic!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- porto e -->
+
+<!-- foot s -->
+<footer class="bg-red-950 pt-24 pb-12">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 text-slate-300 md:w-1/3">
+                <h2 class="font-bold text-white capitalize text-2xl mb-4">rasya nazraditya</h2>
+                <p class="text-sm">rasyanazraditya@gmail.com</p>
+                <p class="text-sm">Ciliwung, Bandung Wetan, <br>Bandung, West Java 40115</p>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/3">
+                <h3 class="font-semibold text-xl text-white mb-5">
+                 anak ganteng 
+                </h3>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/3">
+                <h3 class="font-semibold text-xl text-white mb-5 ">
+                kelas 12
+                </h3>
+            </div>
+            <div class="w-full pt-10 border-t border-white"></div>
+        </div> 
+        <div class="flex items-center justify-center mb-7" style="font-size: 20px;">
+                <!-- yt -->
+                 <a href="https://www.youtube.com/@rasyaajg" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                 </a>
+                 <!-- github -->
+                  <a href="https://github.com/raxzfx" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <!-- instagram -->
+                   <a href="https://www.instagram.com/rasyandty/" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                   </a>
+                   <!-- twitter -->
+                    <a href="https://x.com/RaxzFx" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-red-500 hover:text-white ">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </div>
+                <p class="text-center text-white text-xs ">dibuat oleh rasya dengan menonton video <a href="https://www.youtube.com/watch?v=8Ea4oq8qFtM&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h&index=13" class="text-red-500">WPU</a>, menggunakan <a href="https://tailwindcss.com/" class="text-red-500">Tailwind CSS</a></p>
+    </div>
+</footer>
+<!-- foot e -->
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="./dist/js/script.js"></script>
+</body>
+</html> 
